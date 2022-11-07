@@ -1,0 +1,25 @@
+env:
+  browser: true
+  es2021: true,
+  'vue/setup-compiler-macros': true
+
+extends:
+  - 'plugin:vue/vue3-essential'
+  - 'standard-with-typescript'
+
+overrides: []
+
+parserOptions:
+  parser: '@typescript-eslint/parser'
+  ecmaVersion: 'latest'
+  sourceType: 'module'
+  extraFileExtensions:
+    - vue
+  project:
+    - ./tsconfig.json
+    - ./tsconfig.node.json
+
+plugins:
+  - vue
+
+rules: {}
